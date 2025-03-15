@@ -1,0 +1,3100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Free CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />    
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Map -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" />
+    
+    <!-- 
+      Color mode switch
+      - For demonstration purposes only
+      - If you do not have the possibility to store user preferences on the backend, I highly recommend switching to a media query implementation: https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
+    -->
+    <script>
+      (() => {
+        window.addEventListener('DOMContentLoaded', () => {
+          const colorModeSwitch = document.getElementById('colorModeSwitch');
+          if (colorModeSwitch) {
+            colorModeSwitch.addEventListener('change', () => {
+              document.body.setAttribute('data-bs-theme', colorModeSwitch.checked ? 'dark' : 'light');
+            });
+          }
+        });
+      })();
+    </script>
+    
+    <!-- Title -->
+    <title>BritishPub Strikers Hive</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
+      <div class="container">
+        <!-- Navbar brand (mobile) -->
+        <a class="navbar-brand d-lg-none" href="./index.html">Strikers Hive</a>
+    
+        <!-- Navbar toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./about-us.html">Strikers Hiveとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./menu.html">メニュー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./reservation.html">席の予約</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./reservation.html">オリジナルグッズ</a>
+            </li>
+          </ul>
+    
+          <!-- Navbar brand -->
+          <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="./index.html">Strikers Hive</a>
+    
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./news-and-events.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./gallery.html">写真ギャラリー</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contact-us.html">お問い合わせ</a>
+            </li>
+          </ul>
+    
+          <!-- Color mode -->
+          <div class="form-check form-switch form-switch-color-mode ms-lg-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="colorModeSwitch" />
+            <label class="form-check-label" for="colodeModeSwitch"></label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/IMG_5560.jpg)">
+      <div class="d-flex flex-column min-vh-100 bg-black bg-opacity-50 pt-10 pt-md-8 pb-7 pb-md-0">
+        <div class="container my-auto">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+              <!-- Preheading -->
+              <h3 class="text-sm text-white text-opacity-75"><span class="text-primary"><b>BritishPub</b></h3>
+              <!-- Heading -->
+              <img src="assets/img/rsz_1rsz_1rsz_1strikers.png" alt="logo" title="Strikers Hive">
+              <!-- Subheading -->
+              <p class="text-center text-white text-opacity-75 mb-7">
+                from Ginza street in Hitachi city
+              </p>
+              <a href="#" class="insta_btn2"><i class="fab fa-instagram"></i> <span>店舗Instagram（建設中）</span></a>
+              <p></p>
+              <a href="#" class="insta_btn2"><i class="fab fa-instagram"></i> <span>キッチンカーInstagram（出店中）</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <!-- Address -->
+              <p class="font-serif text-white text-opacity-75 text-center text-md-end text-lg-end my-md-5">
+                <i class="fas fa-map-marker-alt text-primary me-3"></i> 茨城県日立市弁天町1丁目115の2番地
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- DISCOVER -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h1 class="mb-2">Strikers Hiveとは</h1>
+            <!-- Subheading -->
+            <p class="mb-6">
+              
+            </p>
+          </div>
+        </div>  
+        <p></p>                
+        <div class="row">
+          <div class="col-md-2">
+            <!-- Divider -->
+            <hr class="hr-sm text-primary" />
+
+            <!-- Text -->
+            <p class="fs-lg lh-lg text-body-emphasis mb-5 mb-md-0">皆でお酒を交えて共通の話題で盛り上がろう！</p>
+          </div>
+          <div class="col-md-4">
+            <!-- Media -->
+            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+              <!-- Border -->
+              <div class="media-decoration-border" data-jarallax-element="-40"></div>
+
+              <!-- Image -->
+              <img class="media-decoration-img img-fluid" src="assets/img/image.jpg" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-5 align-self-center mx-auto">
+            <!-- Heading -->
+            <h2 class="mb-2">人と人との交流の場を提供</h2>
+
+            <!-- Text -->
+            <p class="mb-0">
+              人と人との交流を目的とした社交場。大型スクリーンでのサッカーをはじめとしたスポーツ観戦、厳選された音楽でおしゃれな交流の場を提供。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 order-md-2 align-self-end">
+            <!-- Divider -->
+            <hr class="hr-sm text-primary" />
+
+            <!-- Text -->
+            <p class="fs-lg lh-lg text-body-emphasis mb-5 mb-md-0">世界、日本の各地域のクラフトビールを取り揃えている</p>
+          </div>
+          <div class="col-md-4 order-md-3">
+            <!-- Media -->
+            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+              <!-- Solid -->
+              <div class="media-decoration-solid" data-jarallax-element="-40"></div>
+
+              <!-- Border -->
+              <div class="media-decoration-border" data-jarallax-element="-40"></div>
+
+              <!-- Image -->
+              <img class="media-decoration-img img-fluid" src="assets/img/IMG_20210703_192921696-768x1024.jpg" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-5 order-md-1 align-self-center mx-auto">
+            <!-- Heading -->
+            <h2 class="mb-2">クラフトビールを選ぶ楽しさ</h2>
+
+            <!-- Text -->
+            <p class="mb-0">
+              世界各地、日本各地のクラフトビール製造所から選りすぐりのクラフトビールを提供。まるでCDやレコードをジャケット買いするような、服を買うような感覚を味わうことができる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="pt-7 pt-md-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <!-- Divider -->
+            <hr class="hr-sm text-primary" />
+
+            <!-- Text -->
+            <p class="fs-lg lh-lg text-body-emphasis mb-5 mb-md-0">ビーフストロガノフやボルシチ等ウクライナの定番料理から珍しいものまで</p>
+          </div>
+          <div class="col-md-4">
+            <!-- Media -->
+            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+              <!-- Border -->
+              <div class="media-decoration-border" data-jarallax-element="-40"></div>
+
+              <!-- Image -->
+              <img class="media-decoration-img img-fluid" src="assets/img/93.jpg" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-5 align-self-center mx-auto">
+            <!-- Heading -->
+            <h2 class="mb-2">日本では珍しい本格的な<br>ウクライナ料理が食べられるお店</h2>
+
+            <!-- Text -->
+            <p class="mb-0">
+              ウクライナ人のシェフ監修。日本では珍しい本格的なウクライナ料理が食べられるお店。サーロインステーキやフィッシュアンドチップス等のパブ定番メニューも充実。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p></p>
+    
+    <!-- ABOUT -->
+    <section data-jarallax data-speed=".8" style="background-image: url(assets/img/44.jpg)">
+      <div class="min-vh-100 py-7 py-md-9 bg-gradient-bottom-end-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <!-- Divider -->
+              <hr class="hr-sm text-primary" />
+
+              <!-- Text -->
+              <p class="fs-lg lh-lg text-black mb-0">女性のみでもくつろげる空間を提供。<br>テラス席も完備。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h1 class="mb-2">フードメニュー</h1>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- Navigation -->
+            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
+              <a class="nav-link active" id="mainsTab" data-bs-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="true">前菜</a>
+              <a class="nav-link" id="NikuTab" data-bs-toggle="tab" href="#Niku" role="tab" aria-controls="Niku">肉、魚料理</a>
+              <a class="nav-link" id="OriginalTab" data-bs-toggle="tab" href="#Original" role="tab" aria-controls="Original">ウクライナ料理（当店オリジナル）</a>
+              <a class="nav-link" id="BergerTab" data-bs-toggle="tab" href="#Berger" role="tab" aria-controls="Berger">ハンバーガー</a>
+              <a class="nav-link" id="PizaTab" data-bs-toggle="tab" href="#Piza" role="tab" aria-controls="Piza">ピザ</a>
+              <a class="nav-link" id="PastaTab" data-bs-toggle="tab" href="#Pasta" role="tab" aria-controls="Pasta">パスタ</a>
+              <a class="nav-link" id="SideTab" data-bs-toggle="tab" href="#Side" role="tab" aria-controls="Side">サイドメニュー</a>
+              <a class="nav-link" id="SpeedTab" data-bs-toggle="tab" href="#Speed" role="tab" aria-controls="Speed">スピードメニュー</a>
+              <a class="nav-link" id="DesertTab" data-bs-toggle="tab" href="#Desert" role="tab" aria-controls="Desert">デザート</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Content -->
+            <div class="tab-content" id="menuContent">
+              <div class="tab-pane fade show active" id="mains" role="tabpanel" aria-labelledby="mainsTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/39.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">カリカリベーコンシーザーサラダ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">カリカリに焼いたベーコンとオリジナルシーザードレッシングを使ったサラダ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/40.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">アボカドサーモンサラダ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アボカドの風味と生サーモンをマリネードしたサラダ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥850</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/41.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">野菜たっぷりバーニャカウダー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">地元の野菜をふんだんに使ったバーニャカウダ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/42.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">鯛のカルパッチョ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">地元の鯛を使用。ワインやビールとも相性抜群。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Niku" role="tabpanel" aria-labelledby="NikuTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/87.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">サーロインステーキ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">国産牛100%のサーロインステーキ。BBQソース、ワサビ、岩塩付。焼き方選べます。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/92.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ローストビーフ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">国産牛100%のローストビーフ。マッシュポテトと一緒に</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/88.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ソーセージの盛り合わせ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スタンダード、チョリソー、ハーブの3種のソーセージ盛り合わせ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/89.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">シャシュリク</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">炭火で焼いたスパイスが効いた豚の串焼き。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/90.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">フィッシュ&チップス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">イギリス料理の代表。白身魚のフライとポテトをタルタルソースやモルトビネガーをかけて食べる</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/91.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">BBQポークリブ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ジューシーで風味豊かな豚肉にバーベキューソースが絡み、口の中でとろけます</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Original" role="tabpanel" aria-labelledby="OriginalTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/93.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ビーフストロガノフ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">マッシュポテトの上にサワークリームを使ったソースが絡んだ牛肉をのせるウクライナ料理の鉄板メニュー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/94.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ペリメニ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ウクライナ風水餃子。3種類の食べ方が楽しめる（スープ、サワークリーム、酢とコショウ）</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/97.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">カルトシカウガルショチカフ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ポットに肉やジャガイモ等を入れて焼いたもの。ウクライナの伝統料理</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/95.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">チュブレキ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ひき肉とマッシュポテトを包んだパイ。肉汁が中に入っていてジューシーな味わい</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/96.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ボルシチ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">言わずと知れたウクライナの暖かいスープ料理。寒い時期限定。1人前</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Berger" role="tabpanel" aria-labelledby="BergerTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/98.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">常陸野バーガー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">常陸牛の合挽肉、地元の野菜を使用したハンバーガー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/99.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">常陸サーモングリルバーガー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">地元で採れたサーモンをグリルで焼いて使用したハンバーガー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Piza" role="tabpanel" aria-labelledby="PizaTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/100.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">生ハムとルッコラ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">生ハムとルッコラがのったさっぱりとした味わいのトマトベースピザ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/101.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">クアトロフォルマッジ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">4種類のチーズを使ったピザ。デザート感覚で食べる場合は蜂蜜をトッピング</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/102.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ディアボロ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">トマトソース、サラミ、チキン、唐辛子が入ったピザ。辛いのが好きな方におすすめ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Pasta" role="tabpanel" aria-labelledby="PastaTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/103.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">常陸牛のペンネボロネーゼ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">常陸牛の合挽肉を使用したトマトベースのパスタ。パスタにはペンネを使用</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/104.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">奥久慈卵のカルボナーラ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">大子の奥久慈卵を使用したカルボナーラです。パスタにはリングイネを使用</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/105.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">エビとアボカドのジェノベーゼ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">バジルの香りが漂うエビとアボカドのジェノベーゼ。パスタにはリングイネを使用</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Side" role="tabpanel" aria-labelledby="SideTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/106.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">鶏のから揚げ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ビールやハイボールとの相性抜群。5個入り。レモン付き</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/124.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ケサディーヤ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">鶏肉をトルティーヤでサンドしたメキシコ料理。サルサソースをつけて食べる。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/107.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">フライドポテト</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">揚げたてサクサクのポテトフライ。ケチャップ、マヨネーズ、マスタードをつけて食べる</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/110.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">とろりチーズポテト</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">出来立てのポテトの上に溶かしたチーズをのせた一品</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/109.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">アンチョビキャベツ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アンチョビとキャベツをオリーブオイルにつけた一品。おつまみに最高</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/108.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">エビのフリッター</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">カリカリした食感が癖になるエビのフリッター。スイートチリソースとの相性抜群</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/111.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">エビとキノコのアヒージョ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">エビとキノコをオリーブオイルにつけた代表的なスペイン料理。パンをつけて食べるのが主流</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/112.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">カナッペ盛り合わせ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">バゲットの上にサーモンや生ハム、クリームチーズ、オリーブをのせたお洒落なおつまみ。ワインとの相性抜群</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥950</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/113.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">チーズの盛り合わせ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">数種類のチーズの盛り合わせ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/114.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">生ハムとサラミの盛り合わせ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">生ハムとサラミの盛り合わせ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1200</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Speed" role="tabpanel" aria-labelledby="SpeedTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/115.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">枝豆</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">飲み屋の定番メニュー。ビールと一緒に</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/116.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ポリポリパスタ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">揚げたパスタに塩をかけて食べるおつまみ</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/117.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">オリーブ盛り合わせ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">グリーンオリーブとブラックオリーブをマリネードして使用。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/118.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ポップコーン</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">焼きたてのポップコーンが食べられる。+¥50で味はバーベキュー、ベーコン、サワークリームの3種類から選べる。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/119.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ピスタチオ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">香りの良いおつまみ。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/120.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ミックスナッツ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">定番のおつまみ。何にでも合う。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/121.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ポッキー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">食べやすいチョコレートのお菓子。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥250</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/122.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">野菜ピクルス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">地元の野菜を詰め合わせたピクルス。お酒との相性抜群。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/123.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ドリトス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">メキシコのお菓子。サルサソースと一緒に。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Desert" role="tabpanel" aria-labelledby="DesertTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/125.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">チュロス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">サクサク食感が癖になるデザート</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/126.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">バニラアイス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">お口直しに
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥300</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DRINKMENU -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h1 class="mb-2">ドリンクメニュー</h1>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- Navigation -->
+            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
+              <a class="nav-link active" id="BeerTab" data-bs-toggle="tab" href="#Beer" role="tab" aria-controls="Beer" aria-selected="true"> ビール </a>           
+              <a class="nav-link" id="SingleTab" data-bs-toggle="tab" href="#Single" role="tab" aria-controls="Single"> シングルモルトウイスキー </a>
+              <a class="nav-link" id="WorldTab" data-bs-toggle="tab" href="#World" role="tab" aria-controls="World"> ワールドウイスキー </a>
+              <a class="nav-link" id="JapanTab" data-bs-toggle="tab" href="#Japan" role="tab" aria-controls="Japan"> 日本のウイスキー </a>
+              <a class="nav-link" id="WineTab" data-bs-toggle="tab" href="#Wine" role="tab" aria-controls="Wine"> ワイン </a>
+              <a class="nav-link" id="CoktailTab" data-bs-toggle="tab" href="#Coktail" role="tab" aria-controls="Coktail"> カクテル </a>
+              <a class="nav-link" id="NihonshuTab" data-bs-toggle="tab" href="#Nihonshu" role="tab" aria-controls="Nihonshu"> 日本酒、焼酎、梅酒</a>
+              <a class="nav-link" id="MoctailTab" data-bs-toggle="tab" href="#Moctail" role="tab" aria-controls="Moctail"> ノンアルカクテル </a>
+              <a class="nav-link" id="SoftdrinkTab" data-bs-toggle="tab" href="#Softdrink" role="tab" aria-controls="Softdrink"> ソフトドリンク </a>                         
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Content -->
+            <div class="tab-content" id="menuContent">
+              <div class="tab-pane fade show active" id="Beer" role="tabpanel" aria-labelledby="BeerTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/45.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">キリン一番搾り</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">定番生ビール。ビールサーバーで提供。<br>ハーフ:¥400　パイント:¥700</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/46.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">樽生ギネスビール</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">黒生ビール。ビールサーバーで提供。<br>ハーフ:¥500　パイント:¥900</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/47.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">お好きなクラフトビール</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">常陸野ネストビール等の定番から珍しいクラフトビールまで数多く揃っています。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800~</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/48.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ハイネケン</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">オランダの有名ビール。インターナショナルプレミアムビールとして世界中から愛されている。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/49.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ブリュードッグ　パンクIPA</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アメリカの有名なクラフトビール。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/51.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">コロナ　エクストラ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">メキシコで有名なビール。清涼感のある味わいのビール。ライムと一緒に。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/52.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ヒューガルデンホワイト</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ベルギーで有名なビール。程よい甘さが特徴のビール。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                   
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/53.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ブルックリンラガー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アメリカで有名なビール。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>    
+              </div>                                                                                                                                                                                                                                        
+              <div class="tab-pane fade" id="Single" role="tabpanel" aria-labelledby="SingleTab">
+          　　　　<h5 class="mb-0 text-center"><font color="red"><b>※全てシングルの料金　ハイボール（炭酸割）、水割、ロック、ストレート対応可能</b></font></h5>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/55.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">アヴァフェルディ12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スコットランドの南ハイランドで造られる1898年の創業以来、150以上の賞を受賞しているシングルモルトスコッチウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/56.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">グレーンモーレンジ<br>オリジナル10年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">本場スコットランドで最も売れているオレンジと桃が合わさったような独特な香りのするシングルモルトスコッチウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/57.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ボウモア12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スコットランドのアイラ島、その中心に位置するボウモア蒸留所で作られ、上品なスモーキーさや熟成環境に由来する潮感から「海のシングルモルト」や「アイラの女王」とも呼ばれる</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/58.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ラフロイグ10年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">「ラフロイグ」は強烈なピート香とスモーキーさが特徴のシングルモルトです。癖の強いものが多いアイラ島のウイスキーの中でも「アイラモルトの王」と呼ばれている</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/59.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">アードベック10年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アードベッグ蒸留所で作られているアイラウイスキー。強いピート・スモークの中に隠された甘いフルーツの甘みがあり、力強くも優しく奥行きのある味わいが楽しめる</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/60.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">グレングラント　アルボラリス</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">グレングラント蒸留所２０２０年の節目に発表された半熟の桃の少し青っぽいフルーテイさとお花の香りが合わさり、まるで香水みたいな華やかさのあるウィスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/61.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ザ・グレンリベット12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">世界で最も売れているシングルモルトウイスキー。リンゴの香りの奥に蜂蜜っぽい甘い香りと樽の木の香りがするウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/62.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">グレンフィディック12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">爽快な洋梨と青リンゴ，フレッシュなレモン，甘いオークの香りのする万人受けするウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/63.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ザマッカラン12年<br>シェリーオーク</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">シェリー樽由来の甘さやほんのりと香るジンジャーなど、濃厚で贅沢な風味。シングルモルトながらバランスの良いクセのない味わいで、比較的万人受け受けするウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/77.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">カバラン　コンサートマスター　シェリーフィニッシュ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">甘いバニラとタフィーの柔らかな芳香に、クルミやナッツの複雑さを感じる風味が広がる。カバランの独特ともいえる甘美なトロピカルフルーツを思わせる口当たりのシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="World" role="tabpanel" aria-labelledby="WorldTab">
+               <h5 class="mb-0 text-center"><font color="red"><b>※全てシングルの料金　ハイボール（炭酸割）、水割、ロック、ストレート対応可能</b></font></h5>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/64.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ホワイトホース ファインオールド</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">世界100か国以上で販売されているスコッチ・ブレンデッドウイスキー。花や蜂蜜を思わせる甘さと豊かなモルト、フルーティーな風味やほんのりとしたスパイシーさなど、複雑でありながらバランスがとれたウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/65.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">デュワーズホワイト</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">1899年に発売されて以来、多くのウイスキーファンから愛されているロングセラー商品。ヘザーやハチミツを思わせる香りと、洋ナシやバニラの甘くさわやかな味わい、バランスの取れた甘くスモーキーな余韻が楽しめるウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/66.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ジョニーウォーカー赤</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スモーキーで力強く、スコットランド東海岸のライトなウイスキーと西海外のピーティーなウイスキーのブレンドが絶妙な味わいをうみだすウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/67.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ジョニーウォーカー黒</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スタンダードボトルの赤よりもスモーキーな香りとレーズンやオレンジなどのフルーティーな風味、バニラのような甘みがあるウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/68.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ホワイトホース12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">キャラメルのように甘くリンゴのようなさっぱりとしたフルーティーな甘味があるウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/69.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">シーバスリーガル12年</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">スコットランドで作られているハチミツやフルーツを彷彿とさせる香りと、バニラやヘーゼルナッツのような香ばしく甘い味わいが堪能できるブレンデッドスコッチウィスキー。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/70.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ブッシュミルズ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">オロロソシェリー樽とバーボン樽で最長7年長期熟成させたモルト原酒と、少量生産のグレーンウイスキーをブレンドしたブレンデッドウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/71.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ジェムソン</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">青リンゴやライムといった爽やかな香りと甘みは非常に飲みやすく、アルコールの刺激も少ないウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/72.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">フォアローゼズ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">香りと個性の異なる10種の原酒を絶妙なバランスでブレンドして生まれる花や果実を想わせる華やかな香りとまろやかな味わいが特徴のバーボンウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/73.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">I.W.ハーパー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">香りと個性の異なる10種の原酒を絶妙なバランスでブレンドして生まれる花や果実を想わせる華やかな香りとまろやかな味わいが特徴のバーボンウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/74.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">メーカーズマーク</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">優しい口あたりで雑味がなく冬小麦の甘みやはちみつ、キャラメルといったバーボン樽由来の甘さを感じるウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/75.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ワイルドターキー</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">コクのあるバニラやカラメルの甘みと、鼻を抜けるスパイシーな香りが楽しめるウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/76.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">フォアローゼズ　シングルバレル</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">高級なさくらんぼのような甘酸っぱい風味が口にやさしく残るウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/78.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ジャックダニエル</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">世界で最も売れているアメリカンウイスキー。特有の甘い香りと豊かな風味が特徴。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥500</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Japan" role="tabpanel" aria-labelledby="JapanTab">
+               <h5 class="mb-0 text-center"><font color="red"><b>※全てシングルの料金　ハイボール（炭酸割）、水割、ロック、ストレート対応可能</b></font></h5>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/79.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">陸</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">黄桃やオレンジ、リンゴに似た甘く優しいフレグランスが、ほのかで優しく自然にふわりと香りのあるリーズナブルなウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/80.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">富士</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">後味はスッキリしていて全体的にクセを感じられないフルーティな香りとまろやかで口当たりのいい風味が特徴のウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/81.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">山崎</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">香りはワイン樽に由来するイチゴやさくらんぼのようなフルーティーさ、味わいはミズナラ樽に由来する蜂蜜のような甘さとなめらかな口当たりが感じられるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/82.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">白州</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">若葉やミントといったフレッシュな香りや、スッキリとした爽やかでキレのある口あたりが特徴のシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/83.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">知多</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">風のように軽やかで口あたりが優しく、雑味のない甘くスムースな味わいが特徴で非常にライトな味わいである為、女性にも人気のシングルグレーンウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/84.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">響</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ローズ、ライチ、ほのかなローズマリーに加え、熟成した樽の香りや白檀の香りがし、オレンジピールチョコレートや蜂蜜の透き通った甘さが感じられ、華やかで柔らかい味わいが広がるブレンデッドウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/85.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">余市</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">石炭直火蒸溜ならではのスモーキーで華やかな香り、重厚なコクのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/86.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">宮城峡</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">洋梨やりんごのようなフルーティな香りと、華やかなフローラルの香りを感じる口あたりが優しいドライフルーツのようなスイートさや、なめらかな口あたりのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Wine" role="tabpanel" aria-labelledby="WineTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/79.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">陸</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">黄桃やオレンジ、リンゴに似た甘く優しいフレグランスが、ほのかで優しく自然にふわりと香りのあるリーズナブルなウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥400</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/80.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">富士</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">後味はスッキリしていて全体的にクセを感じられないフルーティな香りとまろやかで口当たりのいい風味が特徴のウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/81.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">山崎</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">香りはワイン樽に由来するイチゴやさくらんぼのようなフルーティーさ、味わいはミズナラ樽に由来する蜂蜜のような甘さとなめらかな口当たりが感じられるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/82.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">白州</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">若葉やミントといったフレッシュな香りや、スッキリとした爽やかでキレのある口あたりが特徴のシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/83.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">知多</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">風のように軽やかで口あたりが優しく、雑味のない甘くスムースな味わいが特徴で非常にライトな味わいである為、女性にも人気のシングルグレーンウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/84.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">響</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ローズ、ライチ、ほのかなローズマリーに加え、熟成した樽の香りや白檀の香りがし、オレンジピールチョコレートや蜂蜜の透き通った甘さが感じられ、華やかで柔らかい味わいが広がるブレンデッドウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/85.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">余市</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">石炭直火蒸溜ならではのスモーキーで華やかな香り、重厚なコクのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/86.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">宮城峡</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">洋梨やりんごのようなフルーティな香りと、華やかなフローラルの香りを感じる口あたりが優しいドライフルーツのようなスイートさや、なめらかな口あたりのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Coktail" role="tabpanel" aria-labelledby="CoktailTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/127.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">モヒート</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ミントとライムが薫る定番のカクテル。ミントを潰すことで更に香りが広がる。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥600</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/128.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ピニャコラーダ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ココナッツミルクで作られる南国風のカクテル。アレンジで小粒のタピオカを入れている。</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/129.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">ガリバルディ</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">別名カンパリオレンジ。カンパリリキュールとオレンジの組み合わせがおいしいカクテル</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/130.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">サングリア</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">甘めの赤ワインの中にベリーミックスとレモンを入れたカクテル</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥700</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/132.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">アダルトピンクレモネード</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">アルコールが入った大人のピンクレモネード</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥800</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/84.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">響</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">ローズ、ライチ、ほのかなローズマリーに加え、熟成した樽の香りや白檀の香りがし、オレンジピールチョコレートや蜂蜜の透き通った甘さが感じられ、華やかで柔らかい味わいが広がるブレンデッドウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/85.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">余市</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">石炭直火蒸溜ならではのスモーキーで華やかな香り、重厚なコクのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/86.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">宮城峡</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">洋梨やりんごのようなフルーティな香りと、華やかなフローラルの香りを感じる口あたりが優しいドライフルーツのようなスイートさや、なめらかな口あたりのあるシングルモルトウイスキー</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">¥1000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RESERVATION -->
+    <section class="py-7 py-md-9 bg-light" id="reservation">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">オンライン予約</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">氏名、電話番号、メールアドレス、予約人数、日付、時間を記入し、<br>席予約ボタンを押してください。</p>
+          </div>
+        </div>
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-8">
+            <!-- Form -->
+            <form>
+              <div class="row gx-3">
+                <div class="col-md-6">
+                  <!-- Contact number (hidden) -->
+                  <input type="hidden" name="contact_number" />
+
+                  <!-- Full name -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_name">氏名</label>
+                    <input class="form-control" id="user_name" name="user_name" type="text" placeholder="氏名" required />
+                  </div>
+
+                  <!-- Phone number -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_phone">電話番号</label>
+                    <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="電話番号" required />
+                  </div>
+
+                  <!-- Email address -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_email">メールアドレス</label>
+                    <input class="form-control" id="user_email" name="user_email" type="email" placeholder="メールアドレス" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Guests -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="guests">客数</label>
+                    <select class="form-select" id="guests" name="guests" required>
+                      <option value="1">1人</option>
+                      <option value="2" selected="">2人</option>
+                      <option value="3">3人</option>
+                      <option value="4">4人</option>
+                      <option value="5">5人</option>
+                      <option value="6">6人</option>
+                      <option value="7">7人</option>
+                      <option value="8">8人</option>
+                      <option value="9">9人</option>
+                      <option value="10">10人</option>                                  
+                    </select>
+                  </div>
+
+                  <!-- Date -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="date">日付</label>
+                    <input class="form-control" id="date" name="date" type="date" value="2024-07-31" required />
+                  </div>
+
+                  <!-- Time -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="time">時間</label>
+                    <input class="form-control" id="time" name="time" type="time" value="18:00" required />
+                  </div>
+                </div>
+                <p></p>
+                <div class="col text-center">
+                  <!-- Button -->
+                  <button class="btn btn-outline-primary" type="submit">席予約</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EVENTS -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">StrikersHiveオリジナルグッズ販売</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">Tシャツやマグカップ等のオリジナルグッズ発売中。comingsoon...</p>
+          </div>
+          <img src="assets/img/IMG_5931.jpg" alt="logo" title="Strikers Hive">
+        </div>
+      </div>
+    </section>
+    <!-- EVENTS -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">イベント</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">StrikersHiveのInstagram及びTiktokをチェック</p>
+          </div>
+        </div>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-sm collapse">
+            <div class="container">
+              <div class="row align-items-center py-6">
+                <div class="col-9 col-md-7 col-lg-8">
+                  <!-- Heading -->
+                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventOne" aria-controls="eventOne" role="button">
+                    StrikersHiveキッチンカー出店！！
+                  </div>
+                </div>
+                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
+                  <!-- Button -->
+                  <a class="btn btn-outline-primary" href="#section_reservation"> キッチンカーインスタグラムへ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-lg collapse show bg-cover" id="eventOne" style="background-image: url(assets/img/43.jpg)">
+            <div class="bg-black bg-opacity-50">
+              <div class="container">
+                <div class="row py-10">
+                  <div class="col-md-8 col-lg-5">
+
+                    <!-- Heading -->
+                    <h2 class="mb-3 text-white">StrikersHiveキッチンカー出店！！</h2>
+
+                    <!-- Description -->
+                    <p class="mb-6 text-white text-opacity-75">
+                      StrikersHiveキッチンカーをイベントに出店
+                    </p>
+                    
+                    <!-- Button -->
+                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> キッチンカーインスタグラムへ </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-sm collapse show">
+            <div class="container border-top">
+              <div class="row align-items-center py-6">
+                <div class="col-9 col-md-7 col-lg-8">
+                  <!-- Heading -->
+                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventTwo" aria-controls="eventTwo" role="button">
+                    茨城ギャルが1日店長！？
+                  </div>
+                </div>
+                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
+                  <!-- Button -->
+                  <a class="btn btn-outline-primary" href="#section_reservation"> 店舗インスタグラムへ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-lg collapse bg-cover" id="eventTwo" style="background-image: url(assets/img/image2.jpg)">
+            <div class="bg-black bg-opacity-50">
+              <div class="container">
+                <div class="row py-10">
+                  <div class="col-md-8 col-lg-5">
+                    <!-- Heading -->
+                    <h2 class="mb-3 text-white">茨城ギャルが1日店長！？</h2>
+
+                    <!-- Description -->
+                    <p class="mb-6 text-white text-opacity-75">
+                      人気インスタグラマー兼ティックトッカーの茨城ギャルが<br>1日店長でStrikersHiveに出勤!!地元トークで盛り上がろう!!
+                    </p>
+
+                    <!-- Button -->
+                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> 店舗インスタグラムへ </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-sm collapse show">
+            <div class="container border-top">
+              <div class="row align-items-center py-6">
+                <div class="col-9 col-md-7 col-lg-8">
+                  <!-- Heading -->
+                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventThree" aria-controls="eventThree" role="button">
+                    期間限定でビールフェスティバル開催中！！
+                  </div>
+                </div>
+                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
+                  <!-- Button -->
+                  <a class="btn btn-outline-primary" href="#section_reservation"> 店舗インスタグラムへ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-lg collapse bg-cover" id="eventThree" style="background-image: url(assets/img/image3.jpg)">
+            <div class="bg-black bg-opacity-50">
+              <div class="container">
+                <div class="row py-10">
+                  <div class="col-md-8 col-lg-5">
+                    <!-- Heading -->
+                    <h2 class="mb-3 text-white">期間限定でビールフェスティバル開催中！！</h2>
+
+                    <!-- Description -->
+                    <p class="mb-6 text-white text-opacity-75">
+                      期間限定でビール全品10%OFFで飲める!!<br>みんなでビールを楽しもう!!
+                    </p>
+
+                    <!-- Button -->
+                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> 店舗インスタグラムへ </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">写真ギャラリー</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">Coming Soon....</p>
+          </div>
+        </div>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/11.jpg" }'>
+              <img class="img-fluid" src="assets/img/11.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/16.jpg" }'>
+              <img class="img-fluid" src="assets/img/16.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/13.jpg" }'>
+              <img class="img-fluid" src="assets/img/13.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/15.jpg" }'>
+              <img class="img-fluid" src="assets/img/15.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/14.jpg" }'>
+              <img class="img-fluid" src="assets/img/14.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/18.jpg" }'>
+              <img class="img-fluid" src="assets/img/18.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/17.jpg" }'>
+              <img class="img-fluid" src="assets/img/17.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/12.jpg" }'>
+              <img class="img-fluid" src="assets/img/12.jpg" alt="..." />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400.4225605946955!2d140.6550639064238!3d36.593144309553544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602181b424278c85%3A0xebf8f85423b5b847!2z44CSMzE3LTAwNzIg6Iyo5Z-O55yM5pel56uL5biC5byB5aSp55S677yR5LiB55uu77yZ4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1724315705158!5m2!1sja!2sjp" width="1500" height="450" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--<section class="bg-light" data-map='{"center": [500.65515, 36.59322], "zoom": 16}' style="height: 30rem"></section> -->
+
+    <!-- FOOTER -->
+    <footer class="py-7 py-md-9 bg-black">
+      <div class="container px-4">
+        <div class="row gx-7">
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Strikers Hiveについて</h5>
+    
+            <!-- Text -->
+            <p class="mb-6">
+              キッチンカー事業にて様々なイベントに参加。それと並行して店舗開店予定。
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">所在地</h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6">
+              <li class="d-flex mb-2">
+                <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                茨城県日立市弁天町1丁目115の2番地
+              </li>
+              <li class="d-flex mb-2">
+                <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                +1 987 654 3210
+              </li>
+              <li class="d-flex">
+                <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+                <a href="mailto:admin@domain.com">admin@domain.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">営業時間</h5>
+    
+            <!-- Text -->
+            <div class="mb-3">
+              <div class="text-xs">火 - 金曜</div>
+              <div class="font-serif">18:00 AM - 24:00 PM (Lo.23:00)</div>
+            </div>
+    
+            <!-- Text -->
+            <div class="mb-6">
+              <div class="text-xs">土 - 日曜</div>
+              <div class="font-serif">12:00 AM - 24:00 PM (Lo.23:00)</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Copyright -->
+            <div class="d-flex align-items-center">
+              <hr class="hr-sm me-3" style="height: 1px" />
+              &copy; 2024 hai-tacchi. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>
