@@ -2798,11 +2798,15 @@
                       <option value="10">10人</option>                                  
                     </select>
                   </div>
-
+                  
                   <!-- Date -->
+                  
                   <div class="mb-3">
+                    <script>
+                      time = new Date().toLocaleDateString();
+                    </script>
                     <label class="visually-hidden" for="date">日付</label>
-                    <input class="form-control" id="date" name="date" type="date" value="2024-07-31" required />
+                    <input class="form-control" id="date" name="date" type="date" value=time required />
                   </div>
 
                   <!-- Time -->
